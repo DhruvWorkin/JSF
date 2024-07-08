@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background color</title>
+    <style>
+        body{
+            height: 100;
+            width: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change background color</h1>
+    <button onclick="changeBg()">Change</button>
+    <script>
+        function changeBg(){
+            const red=Math.floor(Math.random()*256);
+            const green=Math.floor(Math.random()*256);
+            const blue=Math.floor(Math.random()*256);
+
+            const randomColor=`rgb(${red}, ${green}, ${blue})`;
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+   
+</body>
+</html>

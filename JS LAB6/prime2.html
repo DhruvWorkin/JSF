@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime between two</title>
+</head>
+
+<body>
+    <script>
+        const isprime = (a, b) => {
+
+            let myarray = new Array;
+            for (let i = a; i <= b; i++) {
+                var flag = 0;
+
+
+                for (let j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        flag++;
+                        break;
+                    }
+
+                }
+
+                if (flag == 0) {
+                    myarray.push(i);
+                }
+            }
+            return myarray;
+
+        }
+        document.write(isprime(1, 20));
+    </script>
+
+</body>
+
+</html>

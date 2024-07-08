@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Exampl</title>
+</head>
+<body>
+    <script>
+        class myClass{
+            constructor(roll, name, marks){
+                this.roll=roll;
+                this.name=name;
+                this.marks=marks;
+            }
+            display(){
+                document.write(this.roll+"<br>"+ this.name+"<br>"+ this.marks);
+            }
+        }
+        const pass= new myClass(101,"Dhruv",30);
+        pass.display();
+    </script>
+</body>
+</html>

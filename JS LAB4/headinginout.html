@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    #demo{
+        height: 250px;
+        width: 250px;
+        background-color: bisque;
+    }
+</head>
+<body>
+    <h1 id="demo" onmouseenter="enter(event)" onmouseleave="leave(event)">Click on this text</h1>
+    <script>
+        function enter(event){
+            document.getElementById("demo").style.color = "red";
+        }
+        function leave(event) {
+            document.getElementById("demo").style.color = "black";
+        }
+    </script>
+</body>
+</html>
