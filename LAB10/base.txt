@@ -1,0 +1,7 @@
+npm install (module name)
+npm uninstall (module name)
+npm list
+
+53. Demostrate Node REPL.
+solution => create sum function in terminal and
+execute it and do not close ternminal
