@@ -1,0 +1,6 @@
+npm install -g create-react app
+npx create-react-app lab12
+cd lab12
+npm start
+
+learn react : https://react.dev/learn
